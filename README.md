@@ -1,76 +1,85 @@
 # 21 Lessons
 
-This repository contains the LaTeX source code for the print version of *21
-Lessons - What I've Learned from Falling Down the Bitcoin Rabbit Hole*.
+Ce dépôt contient le code source LaTeX de la version imprimable de *21 Leçons -
+Enseignements tirés de ma chute dans le terrier du lapin Bitcoin*.
 
 ![](https://21lessons.com/assets/images/21-lessons-book.png)
 
-## About This Book
+## À propos de ce livre
 
-This is a bit of an unusual book. But hey, Bitcoin is a bit of an unusual
-technology, so an unusual book about Bitcoin might be fitting. This book came to
-be because of one simple question: *What have you learned from Bitcoin?* I tried
-to answer this question in a single tweet. Then the tweet turned into a
-tweetstorm. The tweetstorm turned into an article. The article turned into three
-articles. Three articles turned into 21 Lessons. And 21 Lessons turned into this
-book.
+Il s'agit d'un livre un peu particulier. Mais bon, Bitcoin est une technologie
+un peu particulière également, donc un livre particulier à propos de Bitcoin est
+peut-être adapté. Ce livre a vu le jour grâce à une simple et unique question :
+*Qu'avez-vous retenu de Bitcoin?* J'ai tenté d'y répondre d'un simple tweet.
+Puis le simple tweet est devenu tempête de tweets. Cette tempête s'est
+transformée en article. L'article a évolué en trois articles. Ces articles sont
+devenus 21 leçons. Ces leçons ont engendré ce livre.
 
-## Issues, Errors, Comments, Contributions
+## Problèmes, Erreurs, Commentaires, Contributions
 
-If you find an error, a dead link, or any other issue, please create an issue on
-GitHub or [contact me](https://dergigi.com/contact). Feel free to resolve the
-issue directly, if you can, by creating a pull request.
+Si vous trouvez une erreur, un lien mort, ou tout autre problème, merci de créer
+une *issue* sur GitHub ou de [me contacter](https://dergigi.com/contact).
+N'hésitez pas à corriger le problème, si vous pouvez, en créant une *pull
+request*.
 
-## Print Version
+## Version imprimable
 
-Version [0.3.11](https://github.com/dergigi/21lessons-book/releases/tag/0.3.11)
-marks the first edition of the book, released on December 24, 2019. It is
-available on [Amazon](https://amzn.to/2VXmQgp).
+La version [0.3.11](
+    https://github.com/dergigi/21lessons-book/releases/tag/0.3.11)
+marque la première édition du livre, sortie le 24 décembre 2019. Il est
+disponible sur [Amazon](https://amzn.to/2VXmQgp).
 
-## eBook Versions
+## Versions eBook
 
-The [ebook branch](https://github.com/dergigi/21lessons-book/tree/ebook) holds a
-slightly modified version of the source code suitable for building the eBook
-versions of the book.
+La [branche ebook](https://github.com/dergigi/21lessons-book/tree/ebook)
+contient une version légèrement modifiée du code source qui convient à l'édition
+de la version eBook du livre.
 
-## Online Version
+## Version en ligne
 
-The [online version](https://github.com/21-lessons/21-lessons.github.io) of this
-book is freely available on [21lessons.com](https://21lessons.com), including an
-audio version read by Guy Swann from the Cryptoconomy podcast. While the online
-version is pretty much the same as the print version, there is some additional
-content in the print version: a foreword by Hass McCook, and a quick
-introductory section about the book (and about the author).
+La [version en ligne](https://github.com/21-lessons/21-lessons.github.io) de ce
+livre est disponible gratuitement sur [21lessons.com](https://21lessons.com),
+avec également une version audio lue par Guy Swann du podcast Cryptoconomy. Bien
+que la version en ligne soit sensiblement la même que la version imprimée, cette
+dernière contient quelques suppléments : un avant-propos par Hass McCook et un
+rapide préambule à propos du livre (et de l'auteur).
 
-## Translations
+## Traductions
 
-Thanks to the awesome members of the Bitcoin community the book was [translated
-to various languages](https://21lessons.com/translations), including:
+Grâce aux membres incroyables de la communauté Bitcoin ce livre a été [traduit
+dans plusieurs langues](https://21lessons.com/translations), dont :
 
-* Spanish
-* Turkish
-* Chinese
-* [German](https://amzn.to/2VZXe2o)
-* Finnish
-* Brazilian Portuguese
-* Japanese
-* Greek
-* Persian
-* Indonesian
-* Italian
+* Espagnol
+* Turc
+* Chinois
+* [Allemand](https://amzn.to/2VZXe2o)
+* Finnois
+* Portugais Brésilien
+* Japonais
+* Grec
+* Persan
+* Indonésien
+* Italien
+* Français
 
-The German print version of the book has a [separate
-repository](https://github.com/21-lessons/21-lessons-book-de), maintained by the
-author.
+La version imprimable allemande a un [dépôt
+séparé](https://github.com/21-lessons/21-lessons-book-de), maintenu par
+l'auteur.
 
-## License
+## Licence
 
-This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
-International License. To view a copy of this license, visit
+Cette œuvre est publiée sous la licence internationale Creative Commons
+Attribution-ShareAlike 4.0. Pour lire une copie de cette licence, consultez
 http://creativecommons.org/licenses/by-sa/4.0/.
 
 ---
 
-Created with 🧡 by [Gigi](https://dergigi.com/support/).
+Fait avec 🧡 par [Gigi](https://dergigi.com/support/).
 
 [![tippin.me](https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@dergigi/F0918E)](https://tippin.me/@dergigi)
+
+---
+
+Traduit de l'anglais avec 🧡 par [Antho](https://twitter.com/PrplSknk).
+
+[![tippin.me](https://badgen.net/badge/%E2%9A%A1%EF%B8%8Ftippin.me/@PrplSknk/F0918E)](https://tippin.me/@PrplSknk)

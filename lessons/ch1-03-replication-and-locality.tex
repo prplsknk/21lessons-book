@@ -1,60 +1,62 @@
-\chapter{Replication and Locality}
+\chapter{Réplication et localité}
 \label{les:3}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-Next came an angry voice -- the rabbit's -- \enquote{Pat, Pat! where are you?}
+\begin{chapquote}{Lewis Carroll, \textit{Alice au pays des merveilles}}
+Ensuite résonna une voix furieuse, celle du Lapin, en train de crier :
+\enquote{Pat ! Pat ! Où es-tu ?}
 \end{chapquote}
 
-Quantum mechanics aside, locality is a non-issue in the physical world.
-The question \textit{\enquote{Where is X?}} can be answered in a meaningful way, no
-matter if X is a person or an object. In the digital world, the question
-of \textit{where} is already a tricky one, but not impossible to answer. Where
-are your emails, really? A bad answer would be \enquote{the cloud}, which is
-just someone else's computer. Still, if you wanted to track down every
-storage device which has your emails on it you could, in theory, locate
-them.
+Si l'on met de côté la mécanique quantique, la localité au sein du monde
+physique n'est pas un problème. La question \textit{\enquote{Où se trouve X ?}}
+trouve une réponse sensée, peu importe si X est une personne ou un objet. Dans
+le monde numérique, la question du \textit{où} est déjà délicate en soi mais on
+peut potentiellement y répondre. Sans rire, où sont situés vos e-mails ?
+\enquote{Le cloud} serait une mauvaise réponse, c'est juste l'ordinateur de
+quelqu'un d'autre. Pourtant, si vous vouliez situer chaque stockage contenant
+une copie de vos e-mails, en théorie, vous pourriez.
 
-With bitcoin, the question of \enquote{where} is \textit{really} tricky. Where,
-exactly, are your bitcoins?
-
-\begin{quotation}\begin{samepage}
-\enquote{I opened my eyes, looked around, and asked the inevitable, the
-traditional, the lamentably hackneyed postoperative question: `Where
-am l?'}
-\begin{flushright} -- Daniel Dennett\footnote{Daniel Dennett, \textit{Where Am I?}~\cite{where-am-i}}
-\end{flushright}\end{samepage}\end{quotation}
-
-The problem is twofold: First, the distributed ledger is distributed by
-full replication, meaning the ledger is everywhere. Second, there are no
-bitcoins. Not only physically, but \textit{technically}.
-
-Bitcoin keeps track of a set of unspent transaction outputs, without
-ever having to refer to an entity which represents a bitcoin. The
-existence of a bitcoin is inferred by looking at the set of unspent
-transaction outputs and calling every entry with 100 million base
-units a bitcoin.
+Avec Bitcoin, la question du \enquote{où} est \textit{vraiment} délicate. Où
+sont situés vos bitcoins, exactement ?
 
 \begin{quotation}\begin{samepage}
-\enquote{Where is it, at this moment, in transit? [...] First, there are no
-bitcoins. There just aren't. They don't exist. There are ledger
-entries in a ledger that's shared [...] They don't exist in any
-physical location. The ledger exists in every physical location,
-essentially. Geography doesn't make sense here --- it is not going to
-help you figuring out your policy here.}
-\begin{flushright} -- Peter Van Valkenburgh\footnote{Peter Van Valkenburgh on the \textit{What Bitcoin Did} podcast, episode 49 \cite{wbd049}}
+\enquote{J'ai ouvert les yeux, regardé autour de moi et j'ai posé l'inévitable,
+la sempiternelle, la tristement banale question postopératoire : `Où suis-je ?'}
+\begin{flushright} -- Daniel Dennett\footnote{Daniel Dennett, \textit{Where Am
+I?}~\cite{where-am-i}}
 \end{flushright}\end{samepage}\end{quotation}
 
-So, what do you actually own when you say \textit{\enquote{I have a bitcoin}} if
-there are no bitcoins? Well, remember all these strange words which you were
-forced to write down by the wallet you used? Turns out these magic words are
-what you own: a magic spell\footnote{The Magic Dust of Cryptography: How digital
-information is changing our society \cite{gigi:magic-spell}} which can be used
-to add some entries to the public ledger --- the keys to \enquote{move} some bitcoins.
-This is why, for all intents and purposes, your private keys \textit{are} your
-bitcoins. If you think I'm making all of this up feel free to send me your
-private keys.
+C'est un double problème : d'abord, le registre distribué l'est par réplication
+totale, ce qui signifie que le registre est partout. Deuxièmement, les bitcoins
+n'existent pas. Pas seulement physiquement, non, \textit{techniquement} aussi.
 
-\paragraph{Bitcoin taught me that locality is a tricky business.}
+Bitcoin gère un ensemble de transactions sortantes non-dépensées, sans jamais
+devoir mentionner une quelconque entité représentant un bitcoin.
+L'existence d'un bitcoin se déduit en observant cet ensemble de transactions,
+tout en désignant comme bitcoin chaque entrée totalisant 100 millions d'unités
+de base.
+
+\begin{quotation}\begin{samepage}
+\enquote{Où est-il pendant le transfert, à ce moment ? [...] Premièrement, il
+n'y a pas de bitcoins. Il n'y en a simplement pas. Ils n'existent pas. Il y a
+des entrées dans un registre qui est partagé [...] Il n'existent dans aucun
+lieu physique. Le registre lui existe partout, en gros. La géographie n'a pas de
+sens ici ; ça ne vous aidera pas à définir votre politique.}
+\begin{flushright} -- Peter Van Valkenburgh\footnote{Peter Van Valkenburgh dans
+le podcast \textit{What Bitcoin Did}, épisode 49 \cite{wbd049}}
+\end{flushright}\end{samepage}\end{quotation}
+
+Par conséquent, que détenez-vous vraiment lorsque vous dites
+\textit{\enquote{j'ai un bitcoin}}, s'ils n'existent pas ? Eh bien, vous vous
+souvenez de tous ces mots étranges que le portefeuille que vous utilisez vous a
+forcé à écrire ? Ce que vous détenez ce sont justement ces mots sorciers : une
+formule magique\footnote{The Magic Dust of Cryptography: Comment l'information
+numérique change notre société \cite{gigi:magic-spell}} qui sert à ajouter des
+entrées dans le registre public ; les clés qui permettent de \enquote{déplacer}
+des bitcoins. À toutes fins utiles, c'est pour ça que vos clés privées
+\textit{sont} vos bitcoins. Si vous vous dites que j'invente tout ça, n'hésitez
+pas à m'envoyer vos clés privées.
+
+\paragraph{Bitcoin m'a appris que la localité était une histoire complexe.}
 
 % ---
 %
