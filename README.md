@@ -1,4 +1,4 @@
-# 21 Lessons
+# 21 Leçons
 
 Ce dépôt contient le code source LaTeX de la version imprimable de *21 Leçons -
 Enseignements tirés de ma chute dans le terrier du lapin Bitcoin*.
