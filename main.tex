@@ -28,21 +28,26 @@
 \def\secondpage{\clearpage\null\vfill
 \pagestyle{empty}
 \begin{minipage}[b]{0.9\textwidth}
-\normalsize 21 Lessons \newline
-\footnotesize What I've Learned From Falling Down the Bitcoin Rabbit Hole \par
+\normalsize 21 Leçons \newline
+\footnotesize Enseignements tirés de ma chute dans le terrier du lapin Bitcoin \par
 
-Second edition. Version 0.3.12-e, git commit \texttt{3be46a1}.
+Seconde édition. Version 0.3.12-e, git commit \texttt{3be46a1}.
 
 \footnotesize\raggedright
 \setlength{\parskip}{0.5\baselineskip}
 Copyright \copyright 2018--\the\year\ Gigi / \href{https://twitter.com/dergigi}{@dergigi} / \href{https://dergigi.com}{dergigi.com} \par
 
+\footnotesize\raggedright
+\setlength{\parskip}{0.5\baselineskip}
+Traduit de l'anglais par Antho / \href{https://twitter.com/PrplSknk}{@PrplSknk} \par
+
 \includegraphics[width=2cm]{assets/images/cc-by-sa.pdf}
 
-This book and its online version are distributed under the terms of the
-Creative Commons Attribution-ShareAlike 4.0 license. A reference copy of this
-license may be found at the official creative commons
-page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
+Ce livre et sa version en ligne sont distribués sous les termes de la licence
+Creative Commons Attribution-ShareAlike 4.0. Une copie de référence de cette
+licence se trouve sur le site officiel de Creative
+Commons.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
+
 
 \end{minipage}
 \vspace*{2\baselineskip}
@@ -96,6 +101,11 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
 \addbibresource{main.bib}
 % \usepackage{natbib}
 % \bibliographystyle{plain}
+
+%French-specific commands
+%--------------------------------------
+\usepackage[french]{babel}
+%--------------------------------------
 
 %%
 % Hyperlinks
@@ -254,8 +264,8 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
 
 \frontmatter
 
-\title{21 Lessons}
-\subtitle{What I've Learned from Falling Down the Bitcoin Rabbit Hole}
+\title{21 Leçons}
+\subtitle{Enseignements tirés de ma chute dans le terrier du lapin Bitcoin}
 \author{Gigi}
 \date{}
 
@@ -274,7 +284,7 @@ page.\footnote{\url{https://creativecommons.org/licenses/by-sa/4.0}}
 % Start the main matter (normal chapters)
 \mainmatter
 
-\part*{21 Lessons}
+\part*{21 Leçons}
 \input{quote}
 \input{chapters/ch0-02-introduction}
 \input{chapters/ch1-00-philosophy}

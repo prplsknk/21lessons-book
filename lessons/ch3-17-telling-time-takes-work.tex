@@ -1,82 +1,89 @@
-\chapter{Telling Time Takes Work}
+\chapter{Donner l'heure demande du travail}
 \label{les:17}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-\enquote{Dear, dear! I shall be too late!}
+\begin{chapquote}{Lewis Carroll, \textit{Alice au pays des merveilles}}
+\enquote{Oh, mon Dieu ! Oh, mon Dieu ! Je vais être en retard !}
 \end{chapquote}
 
-It is often said that bitcoins are mined because thousands of computers
-work on solving \textit{very complex} mathematical problems. Certain problems
-are to be solved, and if you compute the right answer, you \enquote{produce} a
-bitcoin. While this simplified view of bitcoin mining might be easier to
-convey, it does miss the point somewhat. Bitcoins aren't produced or
-created, and the whole ordeal is not really about solving particular
-math problems. Also, the math isn't particularly complex. What is
-complex is \textit{telling the time} in a decentralized system.
+On dit souvent qu'on mine des bitcoins parce que des milliers d'ordinateurs
+travaillent à résoudre des problèmes mathématiques \textit{très complexes}. Des
+problèmes doivent êtres résolus et si vous calculez la bonne réponse, vous
+\enquote{produisez} un bitcoin. Bien que cette vision simplifiée du minage de
+bitcoin soit plus facile à exprimer, elle passe un peu à côté du sujet. Les
+bitcoins ne sont pas produits ou créés et toute la difficulté ne consiste pas
+réellement à résoudre certains problèmes de maths. En plus, les maths en
+question ne sont pas particulièrement complexes. Ce qui l'est, c'est de
+\textit{donner l'heure} dans un système décentralisé.
 
-As outlined in the whitepaper, the proof-of-work system (aka mining) is
-a way to implement a distributed timestamp server.
+Comme le démontre le livre blanc, le système de preuve de travail (alias le
+minage) est une manière d'implémenter un serveur d'horodatage distribué.
 
-\begin{center}
-  \includegraphics[width=\textwidth]{assets/images/bitcoin-whitepaper-timestamp-wide.png}
-  \captionof{figure}{Excerpts from the whitepaper. Did someone say timechain?}
+\begin{figure}
+  \includegraphics{assets/images/bitcoin-whitepaper-timestamp-wide.png}
+  \caption{Extraits du livre blanc. Ai-je entendu \enquote{timechain} ?}
   \label{fig:bitcoin-whitepaper-timestamp-wide}
-\end{center}
+\end{figure}
 
-When I first learned how Bitcoin works I also thought that proof-of-work
-is inefficient and wasteful. After a while, I started to shift my
-perspective on Bitcoin's energy consumption~\cite{gigi:energy}. It seems that
-proof-of-work is still widely misunderstood today, in the year 10 AB
-(after Bitcoin).
+Au début, lorsque j'étudiais le fonctionnement de Bitcoin, j'ai moi aussi pensé
+que la preuve de travail était inefficace et générait du gaspillage. Au bout
+d'un moment, j'ai commencé à changer de point de vue sur la consommation
+d'énergie de Bitcoin~\cite{gigi:energy}. Il semblerait qu'aujourd'hui, en l'an
+10 ap. B (après Bitcoin), la preuve de travail soit toujours largement
+incomprise.
 
-Since the problems to be solved in proof-of-work are made up, many
-people seem to believe that it is \textit{useless} work. If the focus is purely
-on the computation, this is an understandable conclusion. But Bitcoin
-isn't about computation. It is about \textit{independently agreeing on the
-order of things.}
+Beaucoup de gens semblent croire que c'est un travail \textit{inutile}, puisque
+les problèmes à résoudre par la preuve de travail sont inventés. Si l'on se
+focalise uniquement sur les calculs, c'est compréhensible d'arriver à cette
+conclusion. Mais Bitcoin n'est pas une question de calculs. C'est une question
+de \textit{s'accorder indépendamment sur l'ordre des choses}.
 
-Proof-of-work is a system in which everyone can validate what happened
-and in what order it happened. This independent validation is what leads
-to consensus, an individual agreement by multiple parties about who owns
-what.
+La preuve de travail est un système dans lequel chacun peut valider ce qui s'est
+passé et dans quel ordre. Cette validation indépendante est la source du
+consensus, un accord unique entre de multiples parties à propos de qui possède
+quoi.
 
-In a radically decentralized environment, we don't have the luxury of absolute
-time. Any clock would introduce a trusted third party, a central point in the
-system which had to be relied upon and could be attacked. \enquote{Timing is the root
-problem,} as Grisha Trubetskoy points out~\cite{pow-clock}. And Satoshi
-brilliantly solved this problem by implementing a decentralized clock via a
-proof-of-work blockchain. Everyone agrees beforehand that the chain with the
-most cumulative work is the source of truth. It is per definition what actually
-happened. This agreement is what is now known as Nakamoto consensus.
+Dans un environnement radicalement décentralisé, nous ne possédons pas le luxe
+du temps absolu. Toute horloge aurait pour effet d'introduire une tierce partie,
+un point central du système qui pourrait être attaqué et sur lequel il faudrait
+se reposer. \enquote{La mesure du temps est le problème fondamental}, comme le
+souligne Grisha Trubetskoy~\cite{pow-clock}. Et Satoshi a brillamment résolu ce
+problème en proposant l'implémentation d'une horloge décentralisée via une
+chaîne de blocs par preuve de travail. Chacun accepte préalablement que la
+source de vérité provient de la chaîne avec le plus de travail cumulé. C'est
+littéralement ce qui s'est passé. Cette entente est dorénavant connue sous le
+nom de consensus de Nakamoto.
 
 \begin{quotation}\begin{samepage}
-\enquote{The network timestamps transactions by hashing them into an ongoing
-chain which serves as proof of the sequence of events witnessed}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, the Bitcoin whitepaper~\cite{whitepaper}}
+\enquote{Le réseau horodate les transactions en les hachant en une chaîne
+continue de preuves de travail [...] (qui) sert de preuve par témoignage de la
+séquence des événements}
+\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, livre blanc de
+Bitcoin~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
 
-Without a consistent way to tell the time, there is no consistent way to
-tell before from after. Reliable ordering is impossible. As mentioned
-above, Nakamoto consensus is Bitcoin's way to consistently tell the
-time. The system's incentive structure produces a probabilistic,
-decentralized clock, by utilizing both greed and self-interest of
-competing participants. The fact that this clock is imprecise is
-irrelevant because the order of events is eventually unambiguous and can
-be verified by anyone.
+Sans moyen constant pour donner l'heure, il n'existe pas de manière cohérente de
+distinguer l'avant de l'après. Un ordre fiable est impossible. Comme nous
+l'avons vu, le consensus de Nakamoto est le chemin qu'a pris Bitcoin pour donner
+l'heure continuellement. La structure incitative du système produit une horloge
+probabiliste et décentralisée en se servant à la fois de la cupidité et de
+l'intérêt personnel des participants qui se concurrencent. L'imprécision de
+cette horloge n'a aucune importance car à la fin, l'ordre des événements est
+indiscutable et chacun peut le vérifier.
 
-Thanks to proof-of-work, both the work \textit{and} the validation of the work
-are radically decentralized. Everyone can join and leave at will, and
-everyone can validate everything at all times. Not only that, but
-everyone can validate the state of the system \textit{individually}, without
-having to rely on anyone else for validation.
+Grâce à la preuve de travail, la décentralisation radicale touche à la fois le
+travail \textit{et} la vérification du travail. Chacun peut rejoindre et quitter
+le réseau à volonté et chacun peut vérifier tout, tout le temps. Non seulement
+ça, mais chacun peut vérifier l'état du système \textit{personnellement}, sans
+devoir se fier à quiconque.
 
-Understanding proof-of-work takes time. It is often counter-intuitive,
-and while the rules are simple, they lead to quite complex phenomena.
-For me, shifting my perspective on mining helped. Useful, not useless.
-Validation, not computation. Time, not blocks.
+Ça prend du temps de comprendre la preuve de travail. C'est bien souvent
+contre-intuitif et malgré les règles simples, ça donne lieu à des phénomènes
+plutôt complexes. Personnellement, me focaliser sur le minage m'a aidé. C'est
+utile, pas inutile. La vérification, pas les calculs. C'est du temps, pas des
+blocs.
 
-\paragraph{Bitcoin taught me that telling the time is tricky, especially if you are
-decentralized.}
+\paragraph{Bitcoin m'a appris que c'était délicat de donner l'heure, surtout
+quand on est décentralisé.}
 
 % ---
 %

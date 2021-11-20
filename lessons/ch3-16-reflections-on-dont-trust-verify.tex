@@ -1,165 +1,187 @@
-\chapter{Reflections on \enquote{Don't Trust, Verify}}
+\chapter{Remarques sur \enquote{Ne vous fiez pas, vérifiez}}
 \label{les:16}
 
-\begin{chapquote}{Lewis Carroll, \textit{Alice in Wonderland}}
-\enquote{Now for the evidence,} said the King, \enquote{and then the sentence.}
+\begin{chapquote}{Lewis Carroll, \textit{Les aventures d’Alice sous terre}}
+\enquote{Préparez-vous à entendre les témoignages,} dit le Roi, \enquote{et
+ensuite la sentence !}
 \end{chapquote}
 
-Bitcoin aims to replace, or at least provide an alternative to,
-conventional currency. Conventional currency is bound to a centralized
-authority, no matter if we are talking about legal tender like the US
-dollar or modern monopoly money like Fortnite's V-Bucks. In both
-examples, you are bound to trust the central authority to issue, manage
-and circulate your money. Bitcoin unties this bound, and the main issue
-Bitcoin solves is the issue of \textit{trust}.
+Bitcoin cherche à remplacer, ou tout du moins fournir une alternative aux
+monnaies conventionnelles. Ces monnaies sont liées à une autorité centrale, peu
+importe que l'on parle d'un cours légal comme le dollar américain ou des V-Bucks
+de Fortnite. Dans les deux cas, vous êtes tenus de faire confiance à une
+autorité centrale pour émettre, gérer et faire circuler votre argent. Bitcoin
+rompt ce lien et résout cette préoccupation principale : la question de la
+\textit{confiance}.
 
 \begin{quotation}\begin{samepage}
-\enquote{The root problem with conventional currency is all the trust that's
-required to make it work. [...] What is needed is an electronic
-payment system based on cryptographic proof instead of trust}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, official Bitcoin announcement~\cite{bitcoin-announcement} and whitepaper~\cite{whitepaper}}
+\enquote{Le problème fondamental des monnaies traditionnelles, c'est toute la
+confiance nécessaire à son fonctionnement. [...] Ce dont nous avons besoin,
+c'est d'un système de paiement électronique basé sur la preuve cryptographique
+au lieu de la confiance}
+\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, annonce
+officielle de Bitcoin~\cite{bitcoin-announcement} et livre
+blanc~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
 
-Bitcoin solves the problem of trust by being completely decentralized,
-with no central server or trusted parties. Not even trusted \textit{third}
-parties, but trusted parties, period. When there is no central
-authority, there simply \textit{is} no-one to trust. Complete decentralization
-is the innovation. It is the root of Bitcoin's resilience, the reason
-why it is still alive. Decentralization is also why we have mining,
-nodes, hardware wallets, and yes, the blockchain. The only thing you
-have to \enquote{trust} is that our understanding of mathematics and physics
-isn't totally off and that the majority of miners act honestly (which
-they are incentivized to do).
+Bitcoin remédie au problème de la confiance en étant totalement décentralisé,
+sans serveur central ni parties de confiance. Pas seulement sans
+\textit{tierces} parties de confiance, mais sans parties de confiance tout
+court. Quand il n'y a pas d'autorité centrale, il n'y a \textit{personne} à qui
+faire confiance, tout simplement. L'innovation c'est la décentralisation totale.
+C'est la source de la ténacité de Bitcoin, la raison pour laquelle il est
+toujours en vie. C'est aussi ce qui explique pourquoi nous avons du minage, des
+nœuds, des portefeuilles physiques et oui, la blockchain. La seule chose à
+laquelle vous devez faire \enquote{confiance}, c'est le fait que notre
+connaissance des mathématiques et de la physique n'est pas totalement à côté de
+la plaque et que la majorité des mineurs sont honnêtes (et ils sont incités à
+l'être).
 
-While the regular world operates under the assumption of \textit{\enquote{trust,
-but verify,}} Bitcoin operates under the assumption of \textit{\enquote{don't
-trust, verify.}} Satoshi made the importance of removing trust very clear in
-both the introduction as well as the conclusion of the Bitcoin whitepaper.
+Tandis que le monde normal part du postulat \textit{\enquote{fiez vous, mais
+vérifiez}}, Bitcoin se fonde sur le postulat \textit{\enquote{ne vous fiez pas,
+vérifiez}}. Satoshi a très clairement insisté sur l'importance de se passer de
+la confiance à la fois dans l'introduction et la conclusion du livre blanc de
+Bitcoin.
 
 \begin{quotation}\begin{samepage}
-\enquote{Conclusion: We have proposed a system for electronic transactions
-without relying on trust.}
-\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, the Bitcoin whitepaper~\cite{whitepaper}}
+\enquote{Conclusion : nous avons proposé un système de transactions
+électroniques se passant de confiance.}
+\begin{flushright} -- Satoshi Nakamoto\footnote{Satoshi Nakamoto, livre blanc de
+Bitcoin~\cite{whitepaper}}
 \end{flushright}\end{samepage}\end{quotation}
 
-Note that \textit{without relying on trust} is used in a very specific context
-here. We are talking about trusted third parties, i.e. other entities
-which you trust to produce, hold, and process your money. It is assumed,
-for example, that you can trust your computer.
+Notez que \textit{se passant de confiance} est utilisé dans un contexte très
+particulier. Nous parlons des tierces parties de confiance, c'est-à-dire
+d'autres entités à qui vous vous fiez pour produire, détenir et traiter votre
+argent. On partira par exemple du principe que vous pouvez faire confiance à
+votre ordinateur.
 
-As Ken Thompson showed in his Turing Award lecture, trust is an
-extremely tricky thing in the computational world. When running a
-program, you have to trust all kinds of software (and hardware) which,
-in theory, could alter the program you are trying to run in a malicious
-way. As Thompson summarized in his \textit{Reflections on Trusting Trust}:
-\enquote{The moral is obvious. You can't trust code that you did not totally
-create yourself.}~\cite{trusting-trust}
+Comme Ken Thompson l'a montré dans sa conférence au Turing Award, la confiance
+est une chose extrêmement délicate en informatique. Quand vous lancez un
+programme, vous devez vous fier à toutes sortes de logiciels (et de matériels)
+qui, en théorie, pourraient modifier ce programme par malveillance. Pour citer
+Thompson dans \textit{Remarques sur la confiance envers la confiance} :
+\enquote{La morale est évidente. Vous ne pouvez pas faire confiance à du code
+que vous n'avez pas entièrement écrit.}~\cite{trusting-trust}
 
-\begin{center}
-  \includegraphics[width=\textwidth]{assets/images/ken-thompson-hack.png}
-  \captionof{figure}{Excerpts from Ken Thompson's paper `Reflections on Trusting Trust'}
+\begin{figure}
+  \includegraphics{assets/images/ken-thompson-hack.png}
+  \caption{Extraits de l'article de Ken Thompson `Remarques sur la confiance
+  envers la confiance'}
   \label{fig:ken-thompson-hack}
-\end{center}
+\end{figure}
 
-Thompson demonstrated that even if you have access to the source code,
-your compiler --- or any other program-handling program or
-hardware --- could be compromised and detecting this backdoor would be
-very difficult. Thus, in practice, a truly \textit{trustless} system does not
-exist. You would have to create all your software \textit{and} all your
-hardware (assemblers, compilers, linkers, etc.) from scratch, without
-the aid of any external software or software-aided machinery.
+Thompson a démontré que même si vous avez accès au code source, votre
+compilateur --- ou tout autre programme ou matériel d'exécution --- pourrait
+être corrompu et que la détection de cette porte dérobée serait très délicate.
+Par conséquent, en pratique, un système sans aucun \textit{besoin de confiance}
+n'existe pas. Pour ça vous auriez à créer tous vos logiciels (assembleurs,
+compilateurs, éditeurs de liens, etc.) \textit{et} tout votre matériel de bout
+en bout, sans l'aide d'un quelconque logiciel externe ou machine programmable.
 
 \begin{quotation}\begin{samepage}
-\enquote{If you wish to make an apple pie from scratch, you must first invent
-the universe.}
-\begin{flushright} -- Carl Sagan\footnote{Carl Sagan, \textit{Cosmos} \cite{cosmos}}
+\enquote{Si vous voulez faire une tarte aux pommes à partir de rien, vous devez
+d'abord inventer l'univers.}
+\begin{flushright} -- Carl Sagan\footnote{Carl Sagan, \textit{Cosmos}
+\cite{cosmos}}
 \end{flushright}\end{samepage}\end{quotation}
 
-The Ken Thompson Hack is a particularly ingenious and hard-to-detect backdoor,
-so let's take a quick look at a hard-to-detect backdoor which works without
-modifying any software. Researchers found a way to compromise security-critical
-hardware by altering the polarity of silicon
-impurities.~\cite{becker2013stealthy} Just by changing the physical properties
-of the stuff that computer chips are made of they were able to compromise a
-cryptographically secure random number generator. Since this change can't be
-seen, the backdoor can't be detected by optical inspection, which is one of the
-most important tamper-detection mechanism for chips like these.
+Le piratage de Ken Thompson consiste en une porte dérobée particulièrement
+astucieuse et difficile à détecter, qui fonctionne sans modifier aucun logiciel.
+Des chercheurs ont trouvé le moyen de corrompre du matériel critique à la
+sécurité en manipulant la polarité des impuretés dans le
+silicium.~\cite{becker2013stealthy} Ils ont alors été capables de compromettre
+un générateur cryptographique de nombres aléatoires, juste en modifiant les
+propriétés physiques du truc dont sont faites les puces électroniques. Et
+puisque cette modification est invisible, la porte dérobée est indétectable à la
+vérification optique, l'un des mécanismes de détection de sabotage les plus
+utilisés pour ce genre de puces.
 
-\begin{center}
-  \includegraphics[width=\textwidth]{assets/images/stealthy-hardware-trojan.png}
-  \captionof{figure}{Stealthy Dopant-Level Hardware Trojans by Becker, Regazzoni, Paar, Burleson}
+\begin{figure}
+  \includegraphics{assets/images/stealthy-hardware-trojan.png}
+  \caption{Chevaux de Troie matériels furtifs de niveau dopant par Becker,
+  Regazzoni, Paar, Burleson}
   \label{fig:stealthy-hardware-trojan}
-\end{center}
+\end{figure}
 
-Sounds scary? Well, even if you would be able to build everything from
-scratch, you would still have to trust the underlying mathematics. You
-would have to trust that \textit{secp256k1} is an elliptic curve without
-backdoors. Yes, malicious backdoors can be inserted in the mathematical
-foundations of cryptographic functions and arguably this has already
-happened at least once.~\cite{wiki:Dual_EC_DRBG} There are good reasons to be paranoid, and the
-fact that everything from your hardware, to your software, to the
-elliptic curves used can have backdoors~\cite{wiki:backdoors} are some of them.
+Ça vous fait peur ? Eh bien, même si vous étiez capable de tout fabriquer et
+programmer à partir de rien, vous devriez quand même faire confiance aux
+mathématiques sous-jacentes. Il vous faudrait être convaincu que
+\textit{secp256k1} est une courbe elliptique sans porte dérobée. Oui, des portes
+dérobées malveillantes peuvent être insérées dans les fondations mathématiques
+des fonctions cryptographiques et c'est vraisemblablement déjà arrivé au moins
+une fois.~\cite{wiki:Dual_EC_DRBG} Il y a de quoi être paranoïaque pour de
+bonnes raisons et le fait que tout, depuis votre matériel, en passant par vos
+logiciels, jusqu'aux courbes elliptiques que l'on utilise, peut receler une
+porte dérobée~\cite{wiki:backdoors} en fait partie.
 
 \begin{quotation}\begin{samepage}
-\enquote{Don't trust. Verify.}
-\begin{flushright} -- Bitcoiners everywhere
+\enquote{Ne vous fiez pas. Vérifiez.}
+\begin{flushright} -- Des bitcoiners, un peu partout
 \end{flushright}\end{samepage}\end{quotation}
 
-The above examples should illustrate that \textit{trustless} computing is
-utopic. Bitcoin is probably the one system which comes closest to this
-utopia, but still, it is \textit{trust-minimized} --- aiming to remove trust
-wherever possible. Arguably, the chain-of-trust is neverending, since
-you will also have to trust that computation requires energy, that P
-does not equal NP, and that you are actually in base reality and not
-imprisoned in a simulation by malicious actors.
+Les exemples ci-dessus ont pour but d'illustrer que l'informatique \textit{sans
+confiance} est utopique. Bitcoin est sans doute le seul système qui effleure
+cette utopie et pourtant, il est \textit{à confiance réduite} --- visant à
+l'éliminer partout où c'est possible. On peut soutenir que la chaîne de
+confiance est infinie, puisque vous devrez également vous convaincre que les
+calculs demandent de l'énergie, que P n'est pas égal à NP et que vous vivez bien
+dans la réalité et pas dans une simulation orchestrée par des acteurs
+malveillants.
 
-Developers are working on tools and procedures to minimize any remaining trust
-even further. For example, Bitcoin developers created
-Gitian\footnote{\url{https://gitian.org/}}, which is a software distribution
-method to create deterministic builds. The idea is that if multiple developers
-are able to reproduce identical binaries, the chance of malicious tampering is
-reduced. Fancy backdoors aren't the only attack vector. Simple blackmail or
-extortion are real threats as well. As in the main protocol, decentralization is
-used to minimize trust.
+Des développeurs travaillent sur des outils et des procédures cherchant à
+minimiser encore plus toute confiance restante. Par exemple, les développeurs de
+Bitcoin ont créé Gitian\footnote{\url{https://gitian.org/}}, qui est une méthode
+de diffusion de logiciels permettant de faire des compilations déterministes.
+L'idée, c'est que les chances de manipulation malveillante sont réduites lorsque
+plusieurs développeurs parviennent à reproduire des exécutables identiques. Mais
+les portes dérobées imaginaires ne sont pas le seul vecteur d'attaque. Un simple
+chantage ou de l'extorsion sont des menaces bien réelles. Comme dans le
+protocole principal, la décentralisation sert à réduire la confiance nécessaire.
 
-Various efforts are being made to improve upon the chicken-and-egg problem of
-bootstrapping which Ken Thompson's hack so brilliantly pointed
-out~\cite{web:bootstrapping}. One such effort is
-Guix\footnote{\url{https://guix.gnu.org}} (pronounced \textit{geeks}), which
-uses functionally declared package management leading to bit-for-bit
-reproducible builds by design. The result is that you don't have to trust any
-software-providing servers anymore since you can verify that the served binary
-was not tampered with by rebuilding it from scratch. Recently, a
-pull-request was merged to integrate Guix into the Bitcoin build process.\footnote{See PR 15277 of \texttt{bitcoin-core}: \\ \url{https://github.com/bitcoin/bitcoin/pull/15277}}
+Divers efforts sont déployés afin de résoudre le problème de l'amorçage,
+similaire à celui de l'œuf et de la poule, brillamment mis en évidence par le
+piratage de Ken Thompson~\cite{web:bootstrapping}.
+Guix\footnote{\url{https://guix.gnu.org}} (à prononcer \textit{geeks}), qui
+utilise une gestion de paquets fonctionnellement déclarés et permet dès la
+conception une compilation reproductible bit à bit, est un de ces efforts. Il en
+résulte que vous n'avez plus à faire confiance aux serveurs qui vous fournissent
+les logiciels, puisque vous pouvez vérifier par vous-même que l'exécutable
+fourni est intact en le recompilant de zéro. Une \textit{pull request} a
+récemment été fusionnée afin d'intégrer Guix dans le procédé de compilation de
+Bitcoin.\footnote{Voir la PR 15277 de \texttt{bitcoin-core}: \\
+\url{https://github.com/bitcoin/bitcoin/pull/15277}}
 
-\begin{center}
-  \includegraphics[width=\textwidth]{assets/images/guix-bootstrap-dependencies.png}
-  \captionof{figure}{Which came first, the chicken or the egg?}
+\begin{figure}
+  \includegraphics{assets/images/guix-bootstrap-dependencies.png}
+  \caption{Qui était là le premier, l'œuf ou la poule ?}
   \label{fig:guix-bootstrap-dependencies}
-\end{center}
+\end{figure}
 
-Luckily, Bitcoin doesn't rely on a single algorithm or piece of
-hardware. One effect of Bitcoin's radical decentralization is a
-distributed security model. Although the backdoors described above are
-not to be taken lightly, it is unlikely that every software wallet,
-every hardware wallet, every cryptographic library, every node
-implementation, and every compiler of every language is compromised.
-Possible, but highly unlikely.
+Par chance, Bitcoin ne se repose pas sur un seul algorithme ou une seule sorte
+de matériel. Une conséquence de la décentralisation radicale de Bitcoin, c'est
+un modèle de sécurité distribué. Bien que les portes dérobées précédemment
+décrites doivent être prises au sérieux, il est improbable que chaque
+portefeuille logiciel, chaque portefeuille matériel, chaque bibliothèque de
+fonctions cryptographiques, chaque implémentation de nœud et chaque compilateur
+de chaque langage soient compromis. C'est possible, mais très hautement
+improbable.
 
-Note that you can generate a private key without relying on any computational
-hardware or software. You can flip a coin~\cite{antonopoulos2014mastering} a
-couple of times, although depending on your coin and tossing style this source
-of randomness might not be sufficiently random. There is a reason why storage
-protocols like Glacier\footnote{\url{https://glacierprotocol.org/}} advise to
-use casino-grade dice as one of two sources of entropy.
+Notez par ailleurs que vous pouvez très bien générer une clé privée sans même
+vous servir d'un quelconque logiciel ou matériel. Vous pouvez tirer un certain
+nombre de fois à pile ou face~\cite{antonopoulos2014mastering}, mais selon votre
+style de lancer cette source d'aléatoire ne le sera peut-être pas assez. Ce
+n'est pas pour rien que des protocoles de stockage comme
+Glacier\footnote{\url{https://glacierprotocol.org/}} recommandent d'utiliser un
+dé de qualité casino comme une des deux sources d'entropie.
 
-Bitcoin forced me to reflect on what trusting nobody actually entails.
-It raised my awareness of the bootstrapping problem, and the implicit
-chain-of-trust in developing and running software. It also raised my
-awareness of the many ways in which software and hardware can be
-compromised.
+J'ai été forcé par Bitcoin à réfléchir à ce qu'implique réellement de ne se fier
+à personne. Il m'a sensibilisé au problème de l'amorçage et de la chaîne de
+confiance implicite dans le développement et l'exécution des programmes. Il m'a
+fait également prendre conscience des multiples manières de compromettre un
+logiciel ou un matériel.
 
-\paragraph{Bitcoin taught me not to trust, but to verify.}
+\paragraph{Bitcoin m'a appris à ne pas me fier, mais à vérifier.}
 
 % ---
 %
