@@ -2,7 +2,9 @@ build
 *.bib~*
 main.aux
 main.bbl
+main.bcf
 main.blg
+main.ent
 main.fdb_latexmk
 main.fls
 main.idx
@@ -11,6 +13,7 @@ main.ind
 main.lof
 main.out
 main.pdf
+main.run.xml
 main.synctex.gz
 main.log
 main.toc
